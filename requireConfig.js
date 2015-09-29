@@ -28,7 +28,6 @@ require.config({
     waitSeconds: 15
 });
 function getStarted() {
-    var path = window.location.hash.replace('#', '').toLowerCase();
-    require(['app/' + path + '/' + path], function () {});
+    require(['app/toDo/toDo'], function () {});
 }
 getStarted();
