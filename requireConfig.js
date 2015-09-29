@@ -25,9 +25,8 @@ require.config({
     name: 'Angular Test',
     location: '/',  // default 'packagename'
     main: 'app',               // default 'main'
-    waitSeconds: 15
+    waitSeconds: 15,
+    callback: function () {
+        require(['app/toDo/toDo'], function () {});
+    }
 });
-function getStarted() {
-    require(['app/toDo/toDo'], function () {});
-}
-getStarted();
