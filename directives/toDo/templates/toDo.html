@@ -1,0 +1,24 @@
+<div class="todo-directive">
+    <div class="todo-header border-bottom-black">
+        <div class="title">
+            {{toDoHeader()}}
+        </div>
+    </div>
+    <div class="todo-body">
+        <active-input placeholder="Add..."></active-input>
+        <div class="todo-scroll">
+            <div class="todo-container">
+                <div ng-repeat="item in items | orderBy:'-time'">
+                    <span class="todo-remove" can-focus="button" title="Remove"
+                          ng-keydown="clickFromKey($event)"
+                          ng-click="removeItem(item)">x</span>
+                    <span class="todo-activity">{{item.activity}}</span>
+                    <a class="todo-edit" can-focus="button" title="Edit"
+                       ng-keydown="clickFromKey($event)"
+                       ng-click="editItem(item)">edit</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
