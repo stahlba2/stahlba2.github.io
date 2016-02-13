@@ -1,4 +1,4 @@
-# Angular-To-Do-App
+# Mapping US cities and zip codes
 
 A map of the US that utilizes large data sets to map us cities. The JSON files are not practical for production use on a client machine, as they are between 1MB and 5MB. 
 
