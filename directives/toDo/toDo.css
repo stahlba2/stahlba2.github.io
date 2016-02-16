@@ -1,10 +1,12 @@
 .todo-directive {
-    height: 20em;
-    width: 20em;
+    min-height: 10em;
+    width: 100%;
+    min-width: 10em;
     border: 1px solid #000000;
     border-radius: 15px;
     font-size: 1.2em;
     overflow: hidden;
+    box-sizing: border-box;
     font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
 }
 .todo-directive .todo-header {
@@ -25,7 +27,7 @@
     position: relative;
     height: 17em;
     width: 100%;
-    padding: 0.5em;
+    padding: 0.5em 0.25em;
     box-sizing: border-box;
 }
 .todo-directive .todo-scroll {
@@ -35,7 +37,7 @@
 }
 .todo-directive .todo-container {
     height: auto;
-    padding: 2em 1em 1em 1em;
+    padding: 2em 0.5em 1em 0.5em;
 }
 .todo-directive .todo-remove {
     height: 15px;

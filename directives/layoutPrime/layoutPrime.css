@@ -1,0 +1,9 @@
+.layout-prime-table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+.layout-prime-table td.layout-prime-left-sidebar {
+    position: relative;
+    box-sizing: border-box;
+}

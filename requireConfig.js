@@ -1,10 +1,11 @@
 require.config({
-    baseUrl: "/",
+    baseUrl: '/',
     paths: {
-        "angular": 'lib/angular/angular',
-        "angular-modules": 'lib/angular/angular-modules',
-        "angular-animate": 'lib/angular/angular-animate',
-        "angular-route": 'lib/angular/angular-route'
+        'angular': 'lib/angular/angular',
+        'angular-modules': 'lib/angular/angular-modules',
+        'angular-animate': 'lib/angular/angular-animate',
+        'angular-route': 'lib/angular/angular-route',
+        'd3': 'lib/d3/d3'
     },
     map: {
         '*': {
@@ -13,13 +14,13 @@ require.config({
     },
     shim: {
         app: {
-            deps: ["angular-modules"]
+            deps: ['angular-modules']
         },
         'angular-modules': {
-            deps: ["angular"]
+            deps: ['angular']
         },
         'modules/toDo/toDo': {
-            deps: ['angular-modules']
+            deps: ['angular-modules', 'css!styles/style']
         }
     },
     name: 'Angular Test',
@@ -27,6 +28,6 @@ require.config({
     main: 'app',               // default 'main'
     waitSeconds: 15,
     callback: function () {
-        require(['app/toDo/toDo'], function () {});
+        require(['app/toDo'], function () {});
     }
 });

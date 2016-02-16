@@ -3,9 +3,7 @@ define([
 ], function () {
     var activeInputDirective = {};
     function directive () {
-        function link (scope, element, attr) {
-            scope.placeholder = element.attr('placeholder');
-        }
+        function link (scope, element, attr) {}
         return {
             link: link,
             restrict: 'E',
