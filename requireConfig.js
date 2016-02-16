@@ -1,5 +1,5 @@
 require.config({
-    baseUrl: "/Angular-To-Do-App",
+    baseUrl: "/",
     paths: {
         "angular": 'lib/angular/angular',
         "angular-modules": 'lib/angular/angular-modules',
